@@ -10,7 +10,7 @@ eventHub.addEventListener('crimeChosen', event => {
         /*
             Filter the criminals application state down to the people that committed the crime
         */
-        const criminalArray = getCriminals()
+        const criminalArray = useCriminals()
         console.log("This is the criminal array", criminalArray)
 
         const filteredCriminalArray = criminalArray.filter(currentConviction => {
