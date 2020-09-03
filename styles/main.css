@@ -1,3 +1,9 @@
 .card-criminal {
     border: dotted
 }
+
+#noteFormContainer {
+    display: flex;
+    flex-flow: column;
+    width: 200 px;
+}

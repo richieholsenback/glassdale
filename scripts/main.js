@@ -8,6 +8,9 @@ CriminalList();
 
 import { ConvictionSelect } from './convictions/ConvictionSelect.js'
 import { getConvictions } from './convictions/ConvictionProvider.js'
+import { NoteForm } from './notes/NoteForm.js';
 
 getConvictions() 
 .then(() => ConvictionSelect());
+
+NoteForm();
