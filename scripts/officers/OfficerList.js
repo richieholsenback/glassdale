@@ -16,7 +16,7 @@ const addOfficersToDom = (anOfficerArray) => {
     let HTMLArray = anOfficerArray.map(singleOfficer => {
         return OfficerHTML(singleOfficer);
     })
-console.log("HTML Array", HTMLArray)
+// console.log("HTML Array", HTMLArray)
 
 domElement.innerHTML = HTMLArray.join("");
 }
