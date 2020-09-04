@@ -1,16 +1,17 @@
 import {OfficerList} from './officers/OfficerList.js'
-
-OfficerList();
-
 import {CriminalList} from "./criminals/CriminalList.js"
-
-CriminalList();
-
 import { ConvictionSelect } from './convictions/ConvictionSelect.js'
 import { getConvictions } from './convictions/ConvictionProvider.js'
 import { NoteForm } from './notes/NoteForm.js';
+import { NoteList } from './notes/NoteList.js';
+// import { saveNote } from './notes/NoteProvider.js';
+import { OfficerSelect } from './officers/OfficerSelect.js';
 
+OfficerList();
+CriminalList();
 getConvictions() 
 .then(() => ConvictionSelect());
-
 NoteForm();
+NoteList();
+OfficerSelect()
+// saveNote();

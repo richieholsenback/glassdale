@@ -14,9 +14,9 @@ eventHub.addEventListener("click", clickEvent => {
         const noteContent = document.querySelector("#noteForm--text")
         const noteCriminal = document.querySelector("#noteForm--criminal")
 
-        if(noteCriminal.value !== 0){
+        if(noteCriminal.value !== "0"){
         const newNote = {
-            noteTest: noteContent.value,
+            noteText: noteContent.value,
             suspect: noteCriminal.value,
             date: Date.now()
             }
@@ -43,9 +43,7 @@ const render = (criminalArray) => {
                         return `<option value="${criminalObj.name}">${criminalObj.name}</option>`
                     }).join("")
                 }
-            </select>
-        
-
+        </select>
         <button id="saveNote">Save Note</button>
     `
 }

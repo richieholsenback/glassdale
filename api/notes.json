@@ -1,10 +1,22 @@
 {
   "notes": [
     {
-      "noteText": "Here's a note",
-      "date": "yesterday",
-      "suspect": "That damn Kevin Sorbo",
+      "noteText": "I think Jennie did it",
+      "suspect": "Jennie Koepp",
+      "date": 1599174663447,
       "id": 1
+    },
+    {
+      "noteText": "Or maybe Sir Elton",
+      "suspect": "Elton Hand",
+      "date": 1599236627440,
+      "id": 2
+    },
+    {
+      "noteText": "Michael is a bastard",
+      "suspect": "Michel Stamm",
+      "date": 1599237367670,
+      "id": 3
     }
   ]
 }
