@@ -6,6 +6,8 @@ import { NoteForm } from './notes/NoteForm.js';
 import { NoteList } from './notes/NoteList.js';
 // import { saveNote } from './notes/NoteProvider.js';
 import { OfficerSelect } from './officers/OfficerSelect.js';
+import { getWitness } from './witness/WitnessProvider.js';
+import { witnessList } from './witness/WitnessList.js';
 
 OfficerList();
 CriminalList();
@@ -15,3 +17,5 @@ NoteForm();
 NoteList();
 OfficerSelect()
 // saveNote();
+getWitness()
+witnessList();
