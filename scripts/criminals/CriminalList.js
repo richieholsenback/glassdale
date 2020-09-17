@@ -1,49 +1,50 @@
-import { getCriminals, useCriminals } from './CriminalProvider.js'
-import { CriminalHTML } from './Criminal.js'
+import {CriminalHTML} from './Criminal.js';
+import {getCriminals, useCriminals} from './CriminalProvider.js';
 
-const eventHub = document.querySelector(".container")
-
-// Listen for the custom event you dispatched in ConvictionSelect
-eventHub.addEventListener('crimeChosen', event => {
-    // You remembered to add the id of the crime to the event detail, right?
-    if ("crimeThatWasChosen" in event.detail) {
-        /*
-            Filter the criminals application state down to the people that committed the crime
-        */
-        const criminalArray = useCriminals()
-        console.log("This is the criminal array", criminalArray)
-
-        const filteredCriminalArray = criminalArray.filter(currentConviction => {
-
-            return currentConviction.conviction === event.detail.crimeThatWasChosen
-        })
-
-        /*
-            Then invoke render() and pass the filtered collection as
-            an argument
-        */
-        render(filteredCriminalArray)
-    }
+const eventHub = document.querySelector(".container");
+//the list needs to listen for the custom event
+eventHub.addEventListener("crimeChosen", event => {
+	//get selected one of officer
+	const contentTarget = document.querySelector("#officerSelect")
+	// console.log("what officer is selected?", contentTarget.value);
+	
+	if (event.detail.crimeThatWasChosen !== "0"){
+		//filter
+		const matchingCriminals = useCriminals().filter(singleCriminal => {
+			return singleCriminal.conviction === event.detail.crimeThatWasChosen
+		});
+		//invoke render with filter result
+		render(matchingCriminals)
+	}else{
+		render(useCriminals())
+	}
 })
 
+eventHub.addEventListener("officerChosen", event =>{
+	if (event.detail.officerThatWasChosen !== "0"){
+		const matchingCriminals = useCriminals().filter(singleCriminal => {
+			return singleCriminal.arrestingOfficer === event.detail.officerThatWasChosen
+		});
+		render(matchingCriminals)
+	}else{
+		render(useCriminals())
+	}
+})
 
 export const CriminalList = () => {
-    getCriminals()
-        .then(() => {
-            const CriminalArray = useCriminals();
-            console.log("criminal list", CriminalArray);
-            render(CriminalArray)
-        })
+	getCriminals()
+	.then(()=> {
+		const criminalArray = useCriminals();
+		// console.log("criminalArray", criminalArray);
+		render(criminalArray);
+	})
 }
 
 const render = (aCriminalArray) => {
-    const domElement = document.querySelector(".criminalsContainer");
-
-    let HTMLArray = aCriminalArray.map(singleCriminal => {
-        return CriminalHTML(singleCriminal)
-    })
-
-    // console.log(HTMLArray)
-
-    domElement.innerHTML = HTMLArray.join("")
+	const domElement = document.querySelector(".criminalsContainer");
+	// addSelectToTheDOM();
+	let HTMLArray = aCriminalArray.map(singleCriminal => {
+		return CriminalHTML(singleCriminal);
+	})
+	domElement.innerHTML = HTMLArray.join("");
 }

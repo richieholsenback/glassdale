@@ -1,16 +1,15 @@
 import {OfficerList} from './officers/OfficerList.js'
-
-OfficerList();
-
 import {CriminalList} from "./criminals/CriminalList.js"
+import { ConvictionSelect } from './convictions/ConvictionSelect.js'
+import { OfficerSelect } from './officers/OfficerSelect.js';
+import { NoteForm } from './notes/NoteForm.js';
+import { NoteList } from './notes/NoteList.js';
+import { witnessList } from './witness/WitnessList.js';
+
 
 CriminalList();
-
-import { ConvictionSelect } from './convictions/ConvictionSelect.js'
-import { getConvictions } from './convictions/ConvictionProvider.js'
-import { NoteForm } from './notes/NoteForm.js';
-
-getConvictions() 
-.then(() => ConvictionSelect());
-
+ConvictionSelect();
+OfficerSelect()
 NoteForm();
+NoteList();
+witnessList();

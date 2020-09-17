@@ -12,7 +12,7 @@ export const getOfficers = () => {
         //we then need to "do something with the information"
         .then(
             parsedOfficers => {
-                console.table(parsedOfficers)
+                // console.table(parsedOfficers)
                 officers = parsedOfficers
             }
         )
