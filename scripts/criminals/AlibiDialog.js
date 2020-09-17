@@ -22,7 +22,7 @@ eventHub.addEventListener("accociatesClicked", event => {
             <div>${associate.alibi}</div>
             `
             }).join("")
-            }`
+        }`
     }
 
 })

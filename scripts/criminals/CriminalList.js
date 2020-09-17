@@ -5,8 +5,8 @@ const eventHub = document.querySelector(".container");
 //the list needs to listen for the custom event
 eventHub.addEventListener("crimeChosen", event => {
 	//get selected one of officer
-	const contentTarget = document.querySelector("#officerChosen")
-	console.log("what officer is selected?", contentTarget.value);
+	const contentTarget = document.querySelector("#officerSelect")
+	// console.log("what officer is selected?", contentTarget.value);
 	
 	if (event.detail.crimeThatWasChosen !== "0"){
 		//filter
@@ -35,7 +35,7 @@ export const CriminalList = () => {
 	getCriminals()
 	.then(()=> {
 		const criminalArray = useCriminals();
-		console.log("criminalArray", criminalArray);
+		// console.log("criminalArray", criminalArray);
 		render(criminalArray);
 	})
 }
