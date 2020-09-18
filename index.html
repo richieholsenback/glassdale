@@ -11,24 +11,31 @@
 
     <main class="container">
         <header>
-            <div class="filters">
-                <div class="filter filters__crime"></div>
-                <div class="filter filters__incarceration"></div>
-                <div class="filter filters__officer"></div>
-            </div>
-            <div id="noteFormContainer"></div>
+            <h1>ACAB</h1>
         </header>
 
-        <div id="noteFormContainer"></div>
-        <div id="noteListContainer"></div>
+        <div id="criminalAll">
+            
+            <section id="criminalsInfo">
+                <h2>The Criminals</h2>
+                <div class="filter filters__crime"></div>
+                <section class="criminalsContainer"></section>
+                <div class="filter filters__incarceration"></div>
+            </section>
 
-        <div id="witnessContainer"></div>
-        
-        <h2>The Officers</h2>
-        <section class="officersContainer"></section>
+            <aside id="notesAll">
+                <div id="noteFormContainer"></div>
+                <div id="noteListContainer"></div>
+                <div id="witnessContainer"></div>
+            </aside>
+        </div>
 
-        <h2>The Criminals</h2>
-        <section class="criminalsContainer"></section>
+        <section id="officersAll">
+            <h2>The Officers</h2>
+            <div class="filter filters__officer"></div>
+            <section class="officersContainer"></section>
+        </section>
+
     </main>
 
     <script type="module" src="./scripts/main.js"></script>

@@ -9,7 +9,7 @@ const eventHub = document.querySelector('.container')
 const contentTarget = document.querySelector('#noteFormContainer')
 
 eventHub.addEventListener("click", clickEvent => {
-    if(clickEvent.target.id === "saveNote"){
+    if(clickEvent.target.id === "saveNoteButton"){
         
         const noteContent = document.querySelector("#noteForm--text")
         const noteCriminal = document.querySelector("#noteForm--criminal")
@@ -34,7 +34,7 @@ eventHub.addEventListener("click", clickEvent => {
 const render = (criminalArray) => {
     contentTarget.innerHTML = `
         <h3>New Note</h3>
-        <div>
+        <div id="noteFormFields">
             <select class="dropdown" id="noteForm--criminal">
                     <option value="0">Please select a criminal...</option>
                     ${
@@ -44,7 +44,7 @@ const render = (criminalArray) => {
                     }
             </select>
             <textarea id="noteForm--text" placeholder="Put a note here"></textarea>
-            <button id="saveNote">Save Note</button>
+            <button type="button "id="saveNoteButton">Save Note</button>
         </div>
     `
 }
