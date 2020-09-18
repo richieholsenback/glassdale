@@ -1,6 +1,41 @@
+body {
+    display: flex;
+}
+
+#notesAll {
+    padding-left: 5%;
+    width: 50%;
+}
+
+#criminalAll {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(249, 234, 208);
+    
+}
+
 #noteFormContainer {
     display: flex;
     flex-flow: column;
+    justify-content: flex-end;
+}
+
+#noteFormFields {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#noteForm--criminal {
+    width: 12.45em;
+}
+
+#noteForm--text {
+    width: 12em;
+    height: 4em
+}
+
+#saveNoteButton {
+    max-width: 8em;
 }
 
 .card-criminal {
@@ -13,6 +48,16 @@
     border-color: blue;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
 
+}
+
+.note {
+    border: blue dotted;
+    padding: 1em;
+}
+
+#noteListContainer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }

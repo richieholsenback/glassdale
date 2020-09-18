@@ -1,100 +1,16 @@
 {
   "notes": [
     {
-      "noteText": "I think Jennie did it",
-      "suspect": "Jennie Koepp",
-      "date": 1599174663447,
-      "id": 1
+      "noteText": "A real people's champion",
+      "suspectId": 3,
+      "date": 1600448689764,
+      "id": 18
     },
     {
-      "noteText": "Or maybe Sir Elton",
-      "suspect": "Elton Hand",
-      "date": 1599236627440,
-      "id": 2
-    },
-    {
-      "noteText": "Michael is a bastard",
-      "suspect": "Michel Stamm",
-      "date": 1599237367670,
-      "id": 3
-    },
-    {
-      "noteText": "Here is a thing",
-      "suspect": "Jordane West",
-      "date": 1600366899315,
-      "id": 4
-    },
-    {
-      "noteText": "Here is a thing",
-      "suspect": "Jordane West",
-      "date": 1600366908516,
-      "id": 5
-    },
-    {
-      "noteText": "Here is a thing",
-      "suspect": "Jordane West",
-      "date": 1600366909154,
-      "id": 6
-    },
-    {
-      "noteText": "Here is a thing",
-      "suspect": "Jordane West",
-      "date": 1600366909522,
-      "id": 7
-    },
-    {
-      "noteText": "Here is a thing",
-      "suspect": "Jordane West",
-      "date": 1600366927814,
-      "id": 8
-    },
-    {
-      "noteText": "Here is a thing",
-      "suspect": "Jordane West",
-      "date": 1600366928082,
-      "id": 9
-    },
-    {
-      "noteText": "Here is a thing",
-      "suspect": "Jordane West",
-      "date": 1600366928293,
-      "id": 10
-    },
-    {
-      "noteText": "Whoop!",
-      "suspectId": 1,
-      "date": 1600367920110,
-      "id": 11
-    },
-    {
-      "noteText": "Whoop!",
-      "suspectId": 1,
-      "date": 1600367921123,
-      "id": 12
-    },
-    {
-      "noteText": "Whoop!",
-      "suspectId": 1,
-      "date": 1600367921768,
-      "id": 13
-    },
-    {
-      "noteText": "Michaeelllll!",
-      "suspectId": 4,
-      "date": 1600368356955,
-      "id": 14
-    },
-    {
-      "noteText": "Michaeelllll!",
-      "suspectId": 4,
-      "date": 1600368358178,
-      "id": 15
-    },
-    {
-      "noteText": "Crunk",
-      "suspectId": 2,
-      "date": 1600369170045,
-      "id": 16
+      "noteText": "Not his real name I bet",
+      "suspectId": 16,
+      "date": 1600452772372,
+      "id": 19
     }
   ]
 }
